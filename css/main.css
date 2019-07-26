@@ -7,6 +7,9 @@
 .left-col {
   padding-left: 0; }
 
+body {
+  font-family: 'Roboto'; }
+
 .section1 .home-slider {
   height: 100vh; }
   .section1 .home-slider .slick-prev {
@@ -18,7 +21,9 @@
     height: 100vh; }
   .section1 .home-slider .home-slide-1 {
     background-image: url("../images/home/Image-trees.jpg");
-    background-size: cover; }
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat; }
   .section1 .home-slider .home-slide-2 {
     background-image: url("../images/home/boxes_background.png");
     background-size: cover; }
@@ -29,8 +34,10 @@
   height: 100vh; }
 
 .section2 {
-  background-image: url("../images/home/boxes_background.png");
-  background-size: cover; }
+  background-image: url("../images/home/boxes_background.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
 
 .onepage-pagination li a.active:before {
   border: 1px solid #fff; }
@@ -59,15 +66,15 @@
     list-style: none;
     padding: 0; }
     .navbar-links ul li {
-      display: inline; }
+      display: inline;
+      font-weight: 600; }
       .navbar-links ul li:after {
         content: "|";
-        color: white;
         margin-left: 0.5%; }
       .navbar-links ul li:last-child:after {
         content: ""; }
     .navbar-links ul a {
-      color: white; }
+      color: black; }
 
 .landing-logo {
   padding-top: 6%; }
@@ -229,6 +236,8 @@
     font-size: 22px; }
   .footer-section .email-div h2 {
     text-align: center; }
+  .footer-section .email-div form {
+    flex-flow: initial; }
   .footer-section #email-submit {
     width: 135px;
     border-radius: 0;
