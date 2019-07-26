@@ -1,6 +1,5 @@
- <?php
- header("Access-Control-Allow-Origin: *");
-<div class="container-fluid">
+{
+	"store": '<div class="container-fluid">
 					<div class="contact-wrapper">
 						<div class="row">
 							<div class="col-sm-3">
@@ -33,6 +32,5 @@
 							</div>
 						</div>
 					</div>
-				</div>
-
-?>
+				</div>'
+}

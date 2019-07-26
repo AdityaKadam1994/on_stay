@@ -132,40 +132,10 @@
 				</div>
 			</section>
 			<section class="footer-section">
-				<div class="container-fluid">
-					<div class="contact-wrapper">
-						<div class="row">
-							<div class="col-sm-3">
-								<h3>Company</h3>
-								<ul class="foo-list">
-									<li>Our Story</li>
-									<li>Press</li>
-									<li>Careers</li>
-								</ul>
-							</div>
-							<div class="col-sm-3">
-								<h3>Connect</h3>
-								<ul class="foo-list">
-									<li>FAQ</li>
-									<li>Contacts</li>
-								</ul>
-							</div>
-							<div class="col-sm-6">
-								<div class="email-div">
-									<h2>Get local travel tips</h2>
-									<p>Inspiration, Discounts and Recommendations</p>
-									<form class="form-inline">
-							    		<div class="form-group mx-sm-4">
-											<input type="text" class="form-control email-input" name="email" placeholder="E-mail">
-							    		</div>
-									    
-								  		<button type="submit" class="btn btn-primary" id="email-submit">Submit</button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="footer-wrapper">
+					
 				</div>
+				
 
 				
 			</section>
@@ -179,6 +149,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script src="js/jquery.onepage-scroll.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				// get rate button code
@@ -201,15 +172,17 @@
 					autoplay: true,
 				})
 
+
+
 				//common footer section
-				$.ajax({
-				    type: "GET",
-				    url: "footer.php",
-				    success: function(result){
-				        alert(result);
+				// $.ajax({
+				//     type: "GET",
+				//     url: "footer.php",
+				//     success: function(result){
+				//         alert(result);
 				       
-				    }
-				});
+				//     }
+				// });
 
 
 			}); //End of on ready function	
