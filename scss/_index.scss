@@ -1,8 +1,12 @@
+.navbar {
+	opacity: 0.9;
+}
 .section1 {
-	// background-image: url('../images/home/Image-trees.jpg');
-	// background-size: cover;
+	background-image: url('../images/home/boxes_background.png');
+	padding: 130px 0;
+	background-size: cover;
 	.home-slider {
-		height: 100vh;
+		// height: 100vh;
 		.slick-prev {
 			left: 6%;
 			z-index: 1;
@@ -33,8 +37,8 @@
 }
 
 .section2 {
-	background-image: url('../images/home/boxes_background.png');
-	background-size: cover;
+	
+	
 }
 
 .onepage-pagination li a.active:before {
@@ -73,11 +77,13 @@
 
 #location-details-form {
 	background: white;
+	position: relative;
     padding: 10px 22px 8px 0px;
-    position: absolute;
-    bottom: 5%;
-    transform: translateX(50%);
-
+    transform: translateX(-50%);
+    left: 50%;
+    width: 600px;
+    margin-top: 5%;
+    margin-bottom: 20%;
 	.form-control {
 		border-radius: 0;
 		border: 1px solid purple;
@@ -286,16 +292,19 @@
 .email-input::-webkit-input-placeholder {
   color: white;
 }
+.email-form {
+	flex-flow: initial;
+}
 
 
 //mediaqueries
 
 @media only screen and (min-width: 992px) {
-	.location-container {
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-	}
+	// .location-container {
+	// 	position: relative;
+	// 	top: 50%;
+	// 	transform: translateY(-50%);
+	// }
 }
 
 

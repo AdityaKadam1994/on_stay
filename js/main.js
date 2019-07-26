@@ -21,7 +21,7 @@ $(document).ready(function() {
 '								<div class="email-div">'+
 '									<h2>Get local travel tips</h2>'+
 '									<p>Inspiration, Discounts and Recommendations</p>'+
-'									<form class="form-inline">'+
+'									<form class="form-inline email-form">'+
 '							    		<div class="form-group mx-sm-4">'+
 '											<input type="text" class="form-control email-input" name="email" placeholder="E-mail">'+
 '							    		</div>'+
