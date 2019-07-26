@@ -336,9 +336,22 @@ body {
     flex-wrap: nowrap;
     transform: translate(-50%, 280%); } }
 @media only screen and (max-width: 500px) {
+  .landing-content-wrapper {
+    position: relative;
+    padding-bottom: 100px; }
+
+  .navbar-links {
+    bottom: 0; }
+
   #location-details-form {
     transform: translate(-50%, 10%);
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    flex-direction: column; }
+    #location-details-form .form-group {
+      width: 200px; }
+
+  .footer-section .email-div form {
+    flex-flow: row wrap; }
 
   .footer-section {
     height: auto !important; }

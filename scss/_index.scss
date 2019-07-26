@@ -433,9 +433,27 @@
 	}
 }
 @media only screen and (max-width: 500px) {
+	.landing-content-wrapper {
+		position: relative;
+		padding-bottom: 100px;
+	}
+	.navbar-links {
+		bottom: 0;
+	}
 	#location-details-form {
 		transform: translate(-50%, 10%);
 		flex-wrap: wrap;	
+		flex-direction: column;
+		.form-group {
+			width: 200px;
+		}
+	}
+	.footer-section {
+		.email-div {
+		form {
+			flex-flow: row wrap;
+		}
+	}
 	}
 	
 
