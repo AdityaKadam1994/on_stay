@@ -35,5 +35,18 @@ $(document).ready(function() {
 '				</div>';
 	
 				$('.footer-wrapper').append(common_footer);
+
+	// mobile menu
+	$('.hamburger').on('click', function() {
+		$(".navigation-menu").show();
+		setTimeout(function(){ $(".navigation-menu").animate({right: "0"},1500) }, 100);
+	});
+	$('.inner-ham').on('click', function() {
+		
+		$(".navigation-menu").animate({right: "-9999px"},1500);
+		setTimeout(function(){$(".navigation-menu").hide();  }, 1600);
+
+	})
+
 })
 				
