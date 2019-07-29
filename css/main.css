@@ -55,6 +55,8 @@ body {
     width: 20px; }
   .social-icons .call-now-icon {
     width: 80px; }
+  .social-icons a {
+    padding: 0 6px; }
 
 .navbar-links {
   position: absolute;
