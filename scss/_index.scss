@@ -1,6 +1,14 @@
 .section1 {
 	// background-image: url('../images/home/Image-trees.jpg');
 	// background-size: cover;
+	.landing-cotainer {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.landing-content-wrapper {
+		padding-top: 15px;
+	}
 	.home-slider {
 		height: 100vh;
 		.slick-prev {
@@ -73,12 +81,13 @@
 }
 
 .navbar-links {
-	position: absolute;
-	bottom: 8%;
-	width: 90%;
-	left: 50%;
-	transform: translateX(-50%);
+	// position: absolute;
+	// bottom: 8%;
+	// width: 90%;
+	// left: 50%;
+	// transform: translateX(-50%);
 	text-align: center;
+	margin-top: 20px;
 	ul {
 		text-decoration: none;
 		list-style: none;
@@ -117,10 +126,13 @@
 #location-details-form {
 	background: white;
     padding: 10px 22px 8px 0px;
-    position: absolute;
-    bottom: 18%;
-    transform: translateX(50%);
-
+    position: relative;
+    // bottom: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+    width: 100%;
+	
 
 	.form-control {
 		border-radius: 0;
@@ -362,10 +374,10 @@
 }
 
 @media only screen and (max-width: 991px) {
-  #location-details-form {
-    margin-top: 0;
-    transform: translate(-50%, 100%);
-  }
+  // #location-details-form {
+  //   margin-top: 0;
+  //   transform: translate(-50%, 100%);
+  // }
   .section2 {
   	height: auto !important;
   }
@@ -411,12 +423,14 @@
 	}
 	.footer-section #email-submit {
 		width: auto;
-	    margin-left: 50%;
-	    transform: translateX(-75%);
+	    top: 50%;
+	    transform: translateY(-8%);
 	}
 	.places-to-stay .places-wrapper h5:after {
 		left: 43%;
 	}
+
+
 }
 @media only screen and (max-width: 767px) { 
 	.left-col {
@@ -436,7 +450,7 @@
 	}
 	#location-details-form {
 		flex-wrap: nowrap;
-		transform: translate(-50%, 280%);
+		// transform: translate(-50%, 280%);
 	}
 }
 @media only screen and (max-width: 600px) {
@@ -451,25 +465,40 @@
 	.section1 .slick-slide {
 		height: auto;
 	}
-
-	.landing-cotainer {
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
+	
+	.contact-wrapper {
+		h3 {
+			font-size: 22px;
+		}
 	}
-	
-	
+	.footer-section .contact-wrapper {
+		padding: 50px 10px;
+	}
+	.footer-section .foo-list li {
+		font-size: 16px;
+	}
+	.footer-section .email-div h2 {
+		font-size: 22px;
+	}
+	.footer-section .email-div form {
+		flex-flow: row wrap;
+	}
 }
 @media only screen and (max-width: 500px) {
+	.section1 {
+		height: 750px !important;
+	}
 	.landing-content-wrapper {
 		position: relative;
-		padding-bottom: 100px;
+		
 	}
 	.navbar-links {
 		bottom: 0;
+		
 	}
 	#location-details-form {
-		transform: translate(-50%, 10%);
+		
+		background: transparent;
 		flex-wrap: wrap;	
 		flex-direction: column;
 		.form-group {
@@ -478,10 +507,10 @@
 	}
 	.footer-section {
 		.email-div {
-		form {
-			flex-flow: row wrap;
+			form {
+				flex-flow: row wrap;
+			}
 		}
-	}
 	}
 	
 
@@ -539,7 +568,7 @@
 
 @media only screen and (max-width: 320px) { 
 	#location-details-form {
-		transform: translate(-50%, 5%);
+		
 		flex-direction: column;
 		.form-group {
 			width: 200px;
@@ -563,5 +592,8 @@
 	}
 	.navbar-links {
 		bottom: 1%;
+	}
+	.section1 {
+		height: 600px !important;
 	}
 }
