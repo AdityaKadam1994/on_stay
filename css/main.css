@@ -53,6 +53,8 @@ body {
   z-index: 1; }
   .social-icons img {
     width: 20px; }
+  .social-icons .call-now-icon {
+    width: 80px; }
 
 .navbar-links {
   position: absolute;
@@ -335,6 +337,22 @@ body {
   #location-details-form {
     flex-wrap: nowrap;
     transform: translate(-50%, 280%); } }
+@media only screen and (max-width: 600px) {
+  .section1 .home-slider {
+    height: auto; }
+
+  .section1 .home-slider .home-slide {
+    height: auto;
+    max-height: 100%;
+    height: -webkit-fill-available; }
+
+  .section1 .slick-slide {
+    height: auto; }
+
+  .landing-cotainer {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); } }
 @media only screen and (max-width: 500px) {
   .landing-content-wrapper {
     position: relative;

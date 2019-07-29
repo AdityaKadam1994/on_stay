@@ -64,7 +64,11 @@
 	img {
 		width: 20px;
 	}
+	.call-now-icon {
+		width: 80px;
+	}
 }
+
 .navbar-links {
 	position: absolute;
 	bottom: 8%;
@@ -431,6 +435,27 @@
 		flex-wrap: nowrap;
 		transform: translate(-50%, 280%);
 	}
+}
+@media only screen and (max-width: 600px) {
+	.section1 .home-slider {
+		height: auto;
+	}
+	.section1 .home-slider .home-slide {
+		height: auto;
+		max-height: 100%;
+    	height: -webkit-fill-available;
+	}
+	.section1 .slick-slide {
+		height: auto;
+	}
+
+	.landing-cotainer {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	
 }
 @media only screen and (max-width: 500px) {
 	.landing-content-wrapper {
