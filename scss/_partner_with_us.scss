@@ -1,0 +1,138 @@
+
+ .partner-with-us {
+ 	background-image: url('../images/partner/Image-01.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 650px;
+    position: relative;
+    background-position-y: -220px;
+    .inner-booking {
+    	bottom: 18%;
+    }
+    .partner-form {
+    	bottom: 5% !important;
+    	max-width: 670px !important;
+    	position: absolute !important;
+    	.form-control {
+    		border: 1px solid $places-to-stay-text !important;
+    	}
+    }
+ }
+
+.partner-btn {
+    background-color : $places-to-stay-text !important;
+    background: $places-to-stay-text !important;
+}
+
+ .partner-wrapper {
+ 	display: flex;
+ 	.partner-box {
+ 		text-align: center;
+ 		padding: 50px 60px;
+ 		border: 1px solid grey;
+ 	}
+ 	.partner-icon {
+ 		width:50px;
+ 		padding-bottom: 15px;
+ 	}
+ }
+
+ .rules-head {
+ 	padding: 45px 225px;
+ 	h4 {
+ 		margin-bottom: 0;
+ 		border: 2px solid $places-to-stay-text;
+ 		padding: 5px 0;
+ 		color: $places-to-stay-text;
+ 	}
+
+ }
+ .rules {
+ 	padding-bottom: 50px;
+ 	.rule-icon-wrapper {
+ 		img {
+ 			width: 75px;
+ 			padding-top: 25px;
+ 		}
+ 		.rule-icon-box {
+ 			display: flex;
+    		justify-content: space-evenly;
+    		text-align: center;
+ 		}
+ 	}
+ 	.contact-text {
+ 		margin-top: 10px;
+ 		text-align: center;
+ 		margin-top: 40px;
+ 	}
+ }
+
+
+ //mediaqueries
+@media only screen and (max-width: 1250px) {
+	.partner-with-us {
+		background-position-y : 0;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.partner-wrapper .partner-box {
+		font-size: 15px;
+		padding: 50px 25px;
+	}
+
+}
+@media only screen and (max-width: 992px) {
+	.rules-head {
+		padding: 45px 50px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.partner-wrapper {
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.rules-head {
+		padding: 45px 0;
+	}
+	.rules .rule-icon-wrapper img {
+		padding: 10px 0 40px 0;
+	}
+	.rules .rule-icon-wrapper .rule-icon-box {
+		// flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.rule-box {
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.partner-form {
+		flex-direction: column;
+		background: transparent !important;
+		position: absolute !important;
+		.form-control {
+			width: 200px;
+			margin: 5px 0;
+		}
+	}
+
+	.partner-with-us .inner-booking {
+		bottom: 35%;
+	}
+	.partner-with-us {
+
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.partner-with-us .landing-content-wrapper {
+		position: static !important;
+	}
+	.partner-form .form-control {
+		margin: -4px 0;
+	}
+}

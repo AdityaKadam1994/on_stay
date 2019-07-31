@@ -1,0 +1,135 @@
+.inner-landing-section {
+	background-image: url('../images/inner_details/landing_bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	position: relative;
+}
+
+.inner-booking {
+	position: absolute;
+	bottom: 8%;
+	display: flex;
+	left: 50%;
+	transform: translateX(-50%);
+	.booking-box {
+		padding: 15px;
+		h4 {
+			margin-bottom: 0;
+		}
+	}
+	.blue-box {
+	    background: $places-to-stay-text;
+	    color: white;
+	}
+	.grey-box {
+		background: $inner-details-bg;
+		color: $places-to-stay-text;
+	}
+	.book-box {
+		background: $places-to-stay-text;
+	    color: white;
+	    padding: 15px 20px;
+	}
+}
+
+.interior-details {
+	.interior-wrapper {
+		display: flex;
+	}
+	.apt-details {
+		flex-basis: 70%;
+		padding: 40px 120px;
+		background: $inner-details-bg;
+		color: $places-to-stay-text;
+	}
+	.apt-addres {
+		padding: 40px 0 40px 120px;
+		background: $places-to-stay-text;
+		color: white;
+	}
+}
+
+
+.apt-images {
+	.full-img-gallery {
+		display: flex;
+	}
+	.left-full-img {
+		height: 700px;
+		flex-basis: 60%;
+	}
+	.right-full-img {
+		flex-basis: 40%;
+	}
+	.img-boxes {
+		height: 350px;
+
+	}
+}
+
+.comfort-section {
+	background: #fff;
+	.places-wrapper h5 {
+		color: $places-to-stay-text;
+		text-align: left;
+	}
+	.places-wrapper h5:after {
+		content: none;
+	}
+	.places-wrapper .img-wrapper img {
+		border: 12px solid $inner-details-bg;;
+	}
+
+}
+
+
+//mediaqueries
+@media only screen and (max-width: 768px) {
+	.inner-booking {
+		flex-direction: column;
+	}
+	.interior-details .interior-wrapper {
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.apt-images .left-full-img {
+		flex-basis: initial;
+		height: 500px;
+	}
+	.apt-images .full-img-gallery {
+		flex-direction: column;
+	}
+	.interior-details .apt-details {
+		padding: 30px;
+	}
+	.interior-details .apt-addres {
+		padding: 30px;
+	}
+}
+
+
+@media only screen and (max-width: 425px) {
+	.apt-images .left-full-img {
+		height: 500px;
+	}
+	.inner-booking .booking-box {
+		padding: 6px;
+	}
+	.inner-booking .book-box {
+		padding: 10px 6px;
+	}
+
+}
+
+@media only screen and (max-width: 320px) {
+	.apt-images .left-full-img {
+		height: 300px;
+	}
+	.apt-images .img-boxes {
+		height: 300px;
+	}
+
+}

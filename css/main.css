@@ -576,5 +576,193 @@ html, body {
 
   .room-img {
     height: 240px; } }
+.inner-landing-section {
+  background-image: url("../images/inner_details/landing_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative; }
+
+.inner-booking {
+  position: absolute;
+  bottom: 8%;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%); }
+  .inner-booking .booking-box {
+    padding: 15px; }
+    .inner-booking .booking-box h4 {
+      margin-bottom: 0; }
+  .inner-booking .blue-box {
+    background: #254e70;
+    color: white; }
+  .inner-booking .grey-box {
+    background: #e8eded;
+    color: #254e70; }
+  .inner-booking .book-box {
+    background: #254e70;
+    color: white;
+    padding: 15px 20px; }
+
+.interior-details .interior-wrapper {
+  display: flex; }
+.interior-details .apt-details {
+  flex-basis: 70%;
+  padding: 40px 120px;
+  background: #e8eded;
+  color: #254e70; }
+.interior-details .apt-addres {
+  padding: 40px 0 40px 120px;
+  background: #254e70;
+  color: white; }
+
+.apt-images .full-img-gallery {
+  display: flex; }
+.apt-images .left-full-img {
+  height: 700px;
+  flex-basis: 60%; }
+.apt-images .right-full-img {
+  flex-basis: 40%; }
+.apt-images .img-boxes {
+  height: 350px; }
+
+.comfort-section {
+  background: #fff; }
+  .comfort-section .places-wrapper h5 {
+    color: #254e70;
+    text-align: left; }
+  .comfort-section .places-wrapper h5:after {
+    content: none; }
+  .comfort-section .places-wrapper .img-wrapper img {
+    border: 12px solid #e8eded; }
+
+@media only screen and (max-width: 768px) {
+  .inner-booking {
+    flex-direction: column; }
+
+  .interior-details .interior-wrapper {
+    flex-direction: column; } }
+@media only screen and (max-width: 600px) {
+  .apt-images .left-full-img {
+    flex-basis: initial;
+    height: 500px; }
+
+  .apt-images .full-img-gallery {
+    flex-direction: column; }
+
+  .interior-details .apt-details {
+    padding: 30px; }
+
+  .interior-details .apt-addres {
+    padding: 30px; } }
+@media only screen and (max-width: 425px) {
+  .apt-images .left-full-img {
+    height: 500px; }
+
+  .inner-booking .booking-box {
+    padding: 6px; }
+
+  .inner-booking .book-box {
+    padding: 10px 6px; } }
+@media only screen and (max-width: 320px) {
+  .apt-images .left-full-img {
+    height: 300px; }
+
+  .apt-images .img-boxes {
+    height: 300px; } }
+.partner-with-us {
+  background-image: url("../images/partner/Image-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  position: relative;
+  background-position-y: -220px; }
+  .partner-with-us .inner-booking {
+    bottom: 18%; }
+  .partner-with-us .partner-form {
+    bottom: 5% !important;
+    max-width: 670px !important;
+    position: absolute !important; }
+    .partner-with-us .partner-form .form-control {
+      border: 1px solid #254e70 !important; }
+
+.partner-btn {
+  background-color: #254e70 !important;
+  background: #254e70 !important; }
+
+.partner-wrapper {
+  display: flex; }
+  .partner-wrapper .partner-box {
+    text-align: center;
+    padding: 50px 60px;
+    border: 1px solid grey; }
+  .partner-wrapper .partner-icon {
+    width: 50px;
+    padding-bottom: 15px; }
+
+.rules-head {
+  padding: 45px 225px; }
+  .rules-head h4 {
+    margin-bottom: 0;
+    border: 2px solid #254e70;
+    padding: 5px 0;
+    color: #254e70; }
+
+.rules {
+  padding-bottom: 50px; }
+  .rules .rule-icon-wrapper img {
+    width: 75px;
+    padding-top: 25px; }
+  .rules .rule-icon-wrapper .rule-icon-box {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center; }
+  .rules .contact-text {
+    margin-top: 10px;
+    text-align: center;
+    margin-top: 40px; }
+
+@media only screen and (max-width: 1250px) {
+  .partner-with-us {
+    background-position-y: 0; } }
+@media only screen and (max-width: 1024px) {
+  .partner-wrapper .partner-box {
+    font-size: 15px;
+    padding: 50px 25px; } }
+@media only screen and (max-width: 992px) {
+  .rules-head {
+    padding: 45px 50px; } }
+@media only screen and (max-width: 768px) {
+  .partner-wrapper {
+    flex-direction: column; } }
+@media only screen and (max-width: 767px) {
+  .rules-head {
+    padding: 45px 0; }
+
+  .rules .rule-icon-wrapper img {
+    padding: 10px 0 40px 0; }
+
+  .rules .rule-icon-wrapper .rule-icon-box {
+    flex-wrap: wrap; }
+
+  .rule-box {
+    width: 40%; } }
+@media only screen and (max-width: 600px) {
+  .partner-form {
+    flex-direction: column;
+    background: transparent !important;
+    position: absolute !important; }
+    .partner-form .form-control {
+      width: 200px;
+      margin: 5px 0; }
+
+  .partner-with-us .inner-booking {
+    bottom: 35%; } }
+@media only screen and (max-width: 500px) {
+  .partner-with-us .landing-content-wrapper {
+    position: static !important; }
+
+  .partner-form .form-control {
+    margin: -4px 0; } }
 
 /*# sourceMappingURL=main.css.map */

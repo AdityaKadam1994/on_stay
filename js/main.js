@@ -36,6 +36,43 @@ $(document).ready(function() {
 	
 				$('.footer-wrapper').append(common_footer);
 
+	var common_header = '<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top white-nav">'+
+'		    	<div class="container">'+
+'			        <a class="navbar-brand" href="#">'+
+'			        	<img src="images/home/Logo.png" alt="logo" class="img-fluid">'+
+'			        	<!-- <span>Experience</span>'+
+'			        	<span>the feeling</span> -->'+
+'			        </a>'+
+'			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">'+
+'			            <span class="navbar-toggler-icon"></span>'+
+'			        </button>'+
+'			        <div id="navbarNavDropdown" class="navbar-collapse collapse">'+
+'			            <ul class="navbar-nav ml-auto navbar-list">'+
+'			                <li class="nav-item active">'+
+'			                    <a class="nav-link" href="#">Places to Stay <span class="sr-only">(current)</span></a>'+
+'			                </li>'+
+'			                <li class="nav-item">'+
+'			                    <a class="nav-link" href="#">Partners</a>'+
+'			                </li>'+
+'			                <li class="nav-item">'+
+'			                    <a class="nav-link" href="#">Contact</a>'+
+'			                </li>'+
+'							'+
+'							<ul class="social-list">'+
+'				                <li class="nav-item social-items"><a href=""><img src="images/home/Social-media-linkden.png" alt="linked-in logo" class="img-fluid"></a></li>'+
+'								<li class="nav-item social-items"><a href=""><img src="images/home/Social-media--Facebook.png" alt="facebook icon" class="img-fluid"></a></li>'+
+'								<li class="nav-item social-items"><a href=""><img src="images/home/Social-media-instagram.png" alt="instagram icon" class="img-fluid"></a></li>'+
+'								<li class="social-items nav-item"><a href=""><img src="images/home/Call_Now.png" alt="call now icon" class="img-fluid call-now-icon"></a></li>'+
+'							</ul>'+
+'							'+
+''+
+'			            </ul>'+
+'			        </div>'+
+'		        </div>'+
+'		    </nav>';
+			$('.header').append(common_header);
+
+
 	// mobile menu
 	$('.hamburger').on('click', function() {
 		$(".navigation-menu").show();
