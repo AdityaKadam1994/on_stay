@@ -12,7 +12,15 @@
 	a {
 		text-decoration: none;
 	}
-	
+}
+
+.social-list {
+	list-style: none;
+    padding: 0;
+    
+    li {
+    	display: inline-block;
+    }
 }
 
 .room-boxes {
@@ -44,6 +52,11 @@
 }
 .custom-search {
 	border: 1px solid $places-to-stay-text;
+	border-radius: 0;
+	&:focus {
+		box-shadow: none;
+		border: 1px solid $places-to-stay-text;
+	}
 }
 
 .search-form {
@@ -69,7 +82,7 @@
 
 @media only screen and (max-width: 575px) {
 	.white-nav {
-		padding: 25px 10px;
+		padding: 10px 10px;
 	}
 }
 

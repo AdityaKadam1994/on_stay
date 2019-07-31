@@ -23,6 +23,9 @@ section {
 .navbar-brand img {
   height: 75px; }
 
+@media only screen and (max-width: 768px) {
+  .paddingtop {
+    padding-top: 125px; } }
 html, body {
   overflow-x: hidden !important; }
 
@@ -514,6 +517,12 @@ html, body {
   .room-box-wrapper a {
     text-decoration: none; }
 
+.social-list {
+  list-style: none;
+  padding: 0; }
+  .social-list li {
+    display: inline-block; }
+
 .room-boxes {
   width: 345px;
   margin: 30px 25px 30px 0; }
@@ -535,7 +544,11 @@ html, body {
     color: white; }
 
 .custom-search {
-  border: 1px solid #254e70; }
+  border: 1px solid #254e70;
+  border-radius: 0; }
+  .custom-search:focus {
+    box-shadow: none;
+    border: 1px solid #254e70; }
 
 .search-form {
   margin-bottom: 25px; }
@@ -550,7 +563,7 @@ html, body {
 
 @media only screen and (max-width: 575px) {
   .white-nav {
-    padding: 25px 10px; } }
+    padding: 10px 10px; } }
 @media only screen and (max-width: 375px) {
   .room-box-wrapper {
     justify-content: initial; } }
