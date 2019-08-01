@@ -5,7 +5,7 @@ html, body {
 
 .navbar-list {
 	.nav-item {
-		padding: 0 15px;
+		padding: 0 6px;
 	}
 }
 
@@ -32,9 +32,20 @@ html, body {
 // 	}
 // }
 .whatapp-list {
+	margin-top: -10px;
 	img {
-
-		width: 75px !important;
+		padding-top: 2px;
+	    width: 25px !important;
+	    margin-right: 6px;
+	    margin-top: -4px;
+	    padding-bottom: 2px;	
+	}
+	.whats-app-icon {
+		margin-top: 0;
+	}
+	a {
+		text-decoration: none;
+		color: black;
 	}
 	
 }
@@ -560,6 +571,9 @@ html, body {
   //   margin-top: 0;
   //   transform: translate(-50%, 100%);
   // }
+  .whatapp-list {
+  	margin-top: 10px;
+  }
   .navbar-list .nav-item {
   	padding: 0;
   }

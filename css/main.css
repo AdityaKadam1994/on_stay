@@ -30,7 +30,7 @@ html, body {
   overflow-x: hidden !important; }
 
 .navbar-list .nav-item {
-  padding: 0 15px; }
+  padding: 0 6px; }
 
 .foo-section img {
   width: 80%; }
@@ -46,8 +46,19 @@ html, body {
 .footer-section .foo-list li {
   font-weight: normal; }
 
-.whatapp-list img {
-  width: 75px !important; }
+.whatapp-list {
+  margin-top: -10px; }
+  .whatapp-list img {
+    padding-top: 2px;
+    width: 25px !important;
+    margin-right: 6px;
+    margin-top: -4px;
+    padding-bottom: 2px; }
+  .whatapp-list .whats-app-icon {
+    margin-top: 0; }
+  .whatapp-list a {
+    text-decoration: none;
+    color: black; }
 
 .navigation-menu {
   position: absolute;
@@ -333,7 +344,7 @@ html, body {
 
 .footer-section {
   height: 100%;
-  background: #45c4dc; }
+  background: #3399ff; }
   .footer-section .container-fluid {
     padding: 0 50px 30px 50px; }
   .footer-section .contact-wrapper {
@@ -411,6 +422,9 @@ html, body {
   .footer-section .email-div h2 {
     font-size: 22px; } }
 @media only screen and (max-width: 991px) {
+  .whatapp-list {
+    margin-top: 10px; }
+
   .navbar-list .nav-item {
     padding: 0; }
 
