@@ -29,6 +29,23 @@ section {
 html, body {
   overflow-x: hidden !important; }
 
+.navbar-list .nav-item {
+  padding: 0 15px; }
+
+.foo-section img {
+  width: 80%; }
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-evenly; }
+
+.footer-wrapper {
+  height: 100%;
+  margin-top: 50px; }
+
+.footer-section .foo-list li {
+  font-weight: normal; }
+
 .navigation-menu {
   position: absolute;
   display: none;
@@ -53,9 +70,49 @@ html, body {
     right: 10%;
     top: 2%; }
 
+.home-slider {
+  height: 100vh; }
+  .home-slider .slick-prev {
+    left: 4%;
+    z-index: 1; }
+  .home-slider .slick-next {
+    right: 6%; }
+  .home-slider .home-slide {
+    height: 100vh; }
+  .home-slider .slick-slide {
+    height: 100vh; }
+  .home-slider .slick-next:before, .home-slider .slick-prev:before {
+    font-size: 50px; }
+  .home-slider .section2-wrapper {
+    height: 100%;
+    display: flex; }
+  .home-slider .location-details {
+    height: 100%;
+    flex-basis: 50%;
+    background: #254e70;
+    position: relative; }
+  .home-slider .location-image {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100%;
+    flex-basis: 50%; }
+  .home-slider .intro-para {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 0 138px;
+    color: #fff; }
+  .home-slider .location-intro {
+    font-size: 24px;
+    font-weight: 100; }
+  .home-slider .loc-img-1 {
+    background-image: url("../images/home/Entire_Property.JPG"); }
+
 .section1 .landing-cotainer {
   position: relative;
-  top: 50%;
+  top: 70%;
   transform: translateY(-50%); }
 .section1 .landing-content-wrapper {
   padding-top: 15px; }
@@ -143,10 +200,10 @@ html, body {
   width: 100%; }
   #location-details-form .form-control {
     border-radius: 0;
-    border: 1px solid purple; }
+    border: 1px solid #254e70; }
 
 #get-rate {
-  background: #663a96;
+  background: #254e70;
   color: white;
   border-radius: 0;
   border-color: transparent; }
@@ -221,18 +278,25 @@ html, body {
     border-bottom: solid 30px transparent; }
 
 .places-to-stay {
-  background: #e5eae4; }
+  background: #fff; }
   .places-to-stay .place-wrapper-row {
-    padding-top: 30px; }
+    padding-top: 50px; }
   .places-to-stay .places-wrapper {
     padding: 60px 0; }
     .places-to-stay .places-wrapper .img-wrapper img {
       width: 100%;
-      border: 8px solid white; }
+      border: 8px solid #254e70; }
+    .places-to-stay .places-wrapper .gal-name-wrapper {
+      background: #254e70;
+      padding: 10px 0;
+      box-sizing: border-box;
+      color: white; }
+    .places-to-stay .places-wrapper .price-tag {
+      font-size: 22px; }
     .places-to-stay .places-wrapper h5 {
       text-align: center;
-      color: mediumpurple;
-      font-weight: normal;
+      color: #254e70;
+      font-weight: bold;
       font-size: 30px;
       letter-spacing: 2px;
       position: relative; }
@@ -240,17 +304,17 @@ html, body {
         content: '';
         position: absolute;
         width: 100px;
-        border-top: 1.5px solid mediumpurple;
+        border-top: 2px solid #254e70;
         bottom: -10px;
         left: 46%; }
     .places-to-stay .places-wrapper .explore {
       font-size: 20px;
-      color: mediumpurple;
+      color: #254e70;
       position: relative;
       padding-top: 20px; }
       .places-to-stay .places-wrapper .explore a {
         text-decoration: none;
-        color: mediumpurple; }
+        color: #254e70; }
       .places-to-stay .places-wrapper .explore:after {
         border-style: solid;
         border-width: 1px 1px 0 0;
@@ -265,6 +329,7 @@ html, body {
         transform: rotate(45deg); }
 
 .footer-section {
+  height: 100%;
   background: #45c4dc; }
   .footer-section .container-fluid {
     padding: 0 50px 30px 50px; }
@@ -286,13 +351,15 @@ html, body {
     margin-left: 10%;
     font-size: 22px; }
   .footer-section .email-div h2 {
-    text-align: center; }
+    text-align: left; }
   .footer-section .email-div form {
     flex-flow: initial; }
+    .footer-section .email-div form .form-control {
+      border-radius: 0; }
   .footer-section #email-submit {
     width: 135px;
     border-radius: 0;
-    background: #f58220;
+    background: #254e70;
     border: none; }
   .footer-section .email-input {
     width: 350px;
@@ -313,6 +380,9 @@ html, body {
     position: relative;
     top: 50%;
     transform: translateY(-50%); } }
+@media only screen and (max-width: 1400px) {
+  .home-slider .intro-para {
+    padding: 0 128px; } }
 @media only screen and (max-width: 1024px) {
   #location-details-form {
     position: relative;
@@ -324,7 +394,19 @@ html, body {
     width: auto; }
 
   .footer-section .email-input {
-    width: auto; } }
+    width: auto; }
+
+  .home-slider .intro-para {
+    padding: 0 40px; }
+
+  .footer-section .contact-wrapper {
+    padding: 50px 5px; }
+
+  .foo-details h3 {
+    font-size: 22px; }
+
+  .footer-section .email-div h2 {
+    font-size: 22px; } }
 @media only screen and (max-width: 991px) {
   .section1 {
     overflow-x: hidden; }
@@ -342,6 +424,9 @@ html, body {
     .room-info .brown-box:after {
       margin-left: -18%; } }
 @media only screen and (max-width: 768px) {
+  .foo-section {
+    height: auto !important; }
+
   .navbar-links {
     display: none; }
 
@@ -371,8 +456,35 @@ html, body {
     transform: translateY(-8%); }
 
   .places-to-stay .places-wrapper h5:after {
-    left: 43%; } }
+    left: 43%; }
+
+  .home-slider .location-intro {
+    font-size: 20px; }
+
+  .home-slider .location-head {
+    font-size: 28px; }
+
+  .places-to-stay {
+    height: auto !important; }
+
+  .footer-section {
+    height: auto !important; }
+
+  .gal-name-wrapper h2 {
+    font-size: 24px; }
+
+  .places-to-stay .places-wrapper .price-tag {
+    font-size: 20px; }
+
+  .email-div h2 {
+    font-size: 22px; }
+
+  .footer-section .contact-wrapper h3 {
+    font-size: 22px; } }
 @media only screen and (max-width: 767px) {
+  .foo-section {
+    height: auto; }
+
   .left-col {
     padding-left: 15px; }
 
@@ -389,10 +501,25 @@ html, body {
     content: none; }
 
   #location-details-form {
-    flex-wrap: nowrap; } }
+    flex-wrap: nowrap; }
+
+  .footer-section .contact-wrapper {
+    padding: 50px 15px; }
+
+  .footer-wrap {
+    justify-content: space-between; }
+
+  .footer-section #email-submit {
+    float: none; } }
 @media only screen and (max-width: 600px) {
   .section1 .home-slider {
     height: auto; }
+
+  .foo-section {
+    height: auto; }
+
+  .home-slider .section2-wrapper {
+    flex-direction: column; }
 
   .section1 .home-slider .home-slide {
     height: auto;
@@ -401,6 +528,9 @@ html, body {
 
   .section1 .slick-slide {
     height: auto; }
+
+  .footer-section #email-submit {
+    float: none; }
 
   .contact-wrapper h3 {
     font-size: 22px; }
@@ -436,6 +566,9 @@ html, body {
   .footer-section .email-div form {
     flex-flow: row wrap; }
 
+  .home-slider .intro-para {
+    padding: 30px 25px; }
+
   .footer-section {
     height: auto !important; }
 
@@ -447,10 +580,6 @@ html, body {
 
   .email-div {
     margin-top: 5%; }
-
-  .footer-section #email-submit {
-    margin-left: 50%;
-    transform: translateX(-218%); }
 
   .foo-list:nth-child(2) {
     margin-bottom: 10px; }
@@ -465,7 +594,10 @@ html, body {
     width: 75%; }
 
   .places-to-stay {
-    height: auto !important; } }
+    height: auto !important; }
+
+  .footer-wrap {
+    flex-wrap: wrap; } }
 @media only screen and (max-width: 375px) {
   .footer-section #email-submit {
     margin-left: 50%;
@@ -478,7 +610,19 @@ html, body {
     font-size: 20px; }
 
   .places-to-stay .places-wrapper h5:after {
-    left: 37%; } }
+    left: 37%; }
+
+  .home-slider .intro-para {
+    padding: 10px 5px;
+    position: relative;
+    top: auto;
+    transform: none; }
+
+  .home-slider .location-head {
+    font-size: 22px; }
+
+  .home-slider .location-intro {
+    font-size: 18px; } }
 @media only screen and (max-width: 320px) {
   #location-details-form {
     flex-direction: column; }
@@ -556,11 +700,12 @@ html, body {
 .navbar-list img {
   width: 20px; }
 
-.social-items {
-  padding: 6px 5px 0 5px; }
-  .social-items:last-child img {
-    width: 75px; }
+.social-items:last-child img {
+  width: 75px; }
 
+@media only screen and (min-width: 992px) {
+  .social-items {
+    padding: 6px 5px 0 5px !important; } }
 @media only screen and (max-width: 575px) {
   .white-nav {
     padding: 10px 10px; } }

@@ -70,7 +70,7 @@
 }
 
 .social-items {
-	padding: 6px 5px 0 5px;
+	
 	&:last-child {
 		img {
 			width: 75px;
@@ -79,6 +79,12 @@
 }
 
 //mediaqueries
+
+@media only screen and (min-width: 992px) {
+	.social-items {
+		padding: 6px 5px 0 5px !important;
+	}
+}
 
 @media only screen and (max-width: 575px) {
 	.white-nav {
