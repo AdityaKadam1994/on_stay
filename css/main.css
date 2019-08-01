@@ -46,6 +46,9 @@ html, body {
 .footer-section .foo-list li {
   font-weight: normal; }
 
+.whatapp-list img {
+  width: 75px !important; }
+
 .navigation-menu {
   position: absolute;
   display: none;
@@ -408,6 +411,12 @@ html, body {
   .footer-section .email-div h2 {
     font-size: 22px; } }
 @media only screen and (max-width: 991px) {
+  .navbar-list .nav-item {
+    padding: 0; }
+
+  .whatapp-list img {
+    padding: 10px 0; }
+
   .section1 {
     overflow-x: hidden; }
 
@@ -700,7 +709,7 @@ html, body {
 .navbar-list img {
   width: 20px; }
 
-.social-items:last-child img {
+.social-list:nth-child(2) .social-items:last-child img {
   width: 75px; }
 
 @media only screen and (min-width: 992px) {

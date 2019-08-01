@@ -21,7 +21,8 @@
     li {
     	display: inline-block;
     }
-}
+
+ }
 
 .room-boxes {
 	// border: 1px solid black;
@@ -69,14 +70,18 @@
 	}
 }
 
-.social-items {
-	
-	&:last-child {
-		img {
-			width: 75px;
+.social-list {
+	&:nth-child(2) {
+		.social-items {
+			&:last-child {
+			img {
+				width: 75px;
+			}
 		}
+	}	
 	}
 }
+
 
 //mediaqueries
 

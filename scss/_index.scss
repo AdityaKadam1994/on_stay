@@ -26,6 +26,19 @@ html, body {
 	font-weight: normal;
 }
 
+// .social-items {
+// 	&:last-child {
+// 		vertical-align: middle;
+// 	}
+// }
+.whatapp-list {
+	img {
+
+		width: 75px !important;
+	}
+	
+}
+
 .navigation-menu {
 	position: absolute;
 	display: none;
@@ -547,6 +560,15 @@ html, body {
   //   margin-top: 0;
   //   transform: translate(-50%, 100%);
   // }
+  .navbar-list .nav-item {
+  	padding: 0;
+  }
+  .whatapp-list {
+  	img {
+  		
+    	padding: 10px 0;
+  	}
+  }
   .section1 {
   	overflow-x: hidden;
   }
