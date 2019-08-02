@@ -560,9 +560,6 @@ html, body {
   .footer-section .contact-wrapper {
     padding: 50px 15px; }
 
-  .footer-wrap {
-    justify-content: space-between; }
-
   .footer-section #email-submit {
     float: none; } }
 @media only screen and (max-width: 600px) {
