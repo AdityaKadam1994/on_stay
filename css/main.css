@@ -67,19 +67,17 @@ html, body {
 .footer-section .foo-list li {
   font-weight: normal; }
 
-.whatapp-list {
-  margin-top: -10px; }
-  .whatapp-list img {
-    padding-top: 2px;
-    width: 25px !important;
-    margin-right: 6px;
-    margin-top: -4px;
-    padding-bottom: 2px; }
-  .whatapp-list .whats-app-icon {
-    margin-top: 0; }
-  .whatapp-list a {
-    text-decoration: none;
-    color: black; }
+.whatapp-list img {
+  padding-top: 2px;
+  width: 25px !important;
+  margin-right: 6px;
+  margin-top: -5px;
+  padding-bottom: 2px; }
+.whatapp-list .whats-app-icon {
+  margin-top: -5px; }
+.whatapp-list a {
+  text-decoration: none;
+  color: black; }
 
 .navigation-menu {
   position: fixed;
@@ -469,6 +467,14 @@ html, body {
     .room-info .brown-box:after {
       margin-left: -18%; } }
 @media only screen and (max-width: 768px) {
+  .footer-wrap {
+    flex-wrap: wrap;
+    justify-content: initial; }
+    .footer-wrap .foo-details:first-child {
+      flex-basis: 50%; }
+    .footer-wrap .foo-details:nth-child(3) {
+      margin-top: 10px; }
+
   .section1 .home-slider .home-slide-1 {
     background-image: url("../images/home/mob_homepage.jpg"); }
 
@@ -642,10 +648,7 @@ html, body {
     width: 75%; }
 
   .places-to-stay {
-    height: auto !important; }
-
-  .footer-wrap {
-    flex-wrap: wrap; } }
+    height: auto !important; } }
 @media only screen and (max-width: 375px) {
   .footer-section #email-submit {
     margin-left: 50%;
@@ -746,7 +749,7 @@ html, body {
   margin-bottom: 25px; }
 
 .navbar-list img {
-  width: 20px; }
+  width: 25px; }
 
 .social-list:nth-child(2) .social-items:last-child img {
   width: 75px; }
@@ -869,7 +872,7 @@ html, body {
   background-repeat: no-repeat;
   height: 650px;
   position: relative;
-  background-position-y: -220px; }
+  background-position-y: 10px; }
   .partner-with-us .inner-booking {
     bottom: 18%; }
   .partner-with-us .partner-form {
@@ -926,6 +929,10 @@ html, body {
   .rules-head {
     padding: 45px 50px; } }
 @media only screen and (max-width: 768px) {
+  .partner-with-us {
+    background-image: url("../images/partner/mob_partner_img.jpg");
+    background-position-y: 60px; }
+
   .partner-wrapper {
     flex-direction: column; } }
 @media only screen and (max-width: 767px) {
@@ -946,8 +953,16 @@ html, body {
     background: transparent !important;
     position: absolute !important; }
     .partner-form .form-control {
-      width: 200px;
+      width: 220px;
       margin: 5px 0; }
+
+  .inner-booking .blue-box {
+    text-align: center;
+    opacity: 0.7; }
+
+  .inner-booking .grey-box {
+    text-align: center;
+    opacity: 0.7; }
 
   .partner-with-us .inner-booking {
     bottom: 35%; } }

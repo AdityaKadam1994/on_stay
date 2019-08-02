@@ -26,10 +26,10 @@ $(document).ready(function() {
 '										</div>'+
 '										<div class="foo-details">'+
 '											<h3>Registered Office</h3>'+
-'											<p>On A Stay,</p>'+
-'											<p>XXXXXXX</p>'+
-'											<p>XXXXXXX</p>'+
-'											<p>XXXX,Goa</p>'+
+'											<p>Onastay Travel Tech Pvt Ltd,</p>'+
+'											<p>201-301, Shanta Building,</p>'+
+'											<p>18th June Road,</p>'+
+'											<p>Panjim 403001</p>'+
 '										</div>'+
 '									</div>'+
 '									'+
@@ -69,7 +69,7 @@ $(document).ready(function() {
 '		<a class="navbar-brand" href="index.html">			        	'+
 '			<img src="images/home/Logo.png" alt="logo" class="img-fluid">			        	'+
 '						  </a>			        			        <div class="navbar-collapse collapse">			            <ul class="navbar-nav ml-auto navbar-list">			                <li class="nav-item">			                    <a class="nav-link" href="places_to_stay.html">Book a stay <span class="sr-only">(current)</span></a>			                </li>			                <li class="nav-item">			                    <a class="nav-link" href="partner_with_us.html">Be a Home Partner</a>			                </li>			                <li class="nav-item">			                    <a class="nav-link contact-link" href="#foo-toggle">Contact</a>			                </li>														<ul class="social-list">				                <li class="nav-item social-items"><a href=""><img src="images/home/Social-media-linkden.png" alt="linked-in logo" class="img-fluid"></a></li>								<li class="nav-item social-items"><a href=""><img src="images/home/Social-media--Facebook.png" alt="facebook icon" class="img-fluid"></a></li>								<li class="nav-item social-items"><a href=""><img src="images/home/Social-media-instagram.png" alt="instagram icon" class="img-fluid"></a></li>															</ul>'+
-'						  	<ul class="social-list whatapp-list">									<li class="social-items nav-item"><a href=""><img src="images/home/Call_Now.png" alt="call now icon" class="img-fluid call-now-icon">9999999999</a><br><a href=""><img src="images/home/Whatsapp.png" alt="whats app icon" class="img-fluid call-now-icon whats-app-icon">9999999999</a></li>							</ul>'+
+'						  	<ul class="social-list whatapp-list">									<li class="social-items nav-item"><a href=""><img src="images/home/Call_Now.png" alt="call now icon" class="img-fluid call-now-icon"><a href=""><img src="images/home/Whatsapp.png" alt="whats app icon" class="img-fluid call-now-icon whats-app-icon"><br />9999999999</a></li>							</ul>'+
 '						  										            </ul>			        </div>		        </div>		    </nav>'
 ;
 	
