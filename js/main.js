@@ -3,7 +3,7 @@ $(document).ready(function() {
 '						'+
 '					<img src="images/home/Untitled-1-08.png" alt="Untitled-1-08.png">'+
 '				</div>'+
-'				<div class="footer-section">'+
+'				<div class="footer-section" id="foo-toggle">'+
 '					<div class="container-fluid">'+
 '						<div class="contact-wrapper">'+
 '							<div class="row outer-footer-row">'+
@@ -68,7 +68,7 @@ $(document).ready(function() {
 '	<div class="container">			        '+
 '		<a class="navbar-brand" href="index.html">			        	'+
 '			<img src="images/home/Logo.png" alt="logo" class="img-fluid">			        	'+
-'						  </a>			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">			            <span class="navbar-toggler-icon"></span>			        </button>			        <div id="navbarNavDropdown" class="navbar-collapse collapse">			            <ul class="navbar-nav ml-auto navbar-list">			                <li class="nav-item">			                    <a class="nav-link" href="places_to_stay.html">Book a stay <span class="sr-only">(current)</span></a>			                </li>			                <li class="nav-item">			                    <a class="nav-link" href="partner_with_us.html">Be a Home Partner</a>			                </li>			                <li class="nav-item">			                    <a class="nav-link" href="#">Contact</a>			                </li>														<ul class="social-list">				                <li class="nav-item social-items"><a href=""><img src="images/home/Social-media-linkden.png" alt="linked-in logo" class="img-fluid"></a></li>								<li class="nav-item social-items"><a href=""><img src="images/home/Social-media--Facebook.png" alt="facebook icon" class="img-fluid"></a></li>								<li class="nav-item social-items"><a href=""><img src="images/home/Social-media-instagram.png" alt="instagram icon" class="img-fluid"></a></li>															</ul>'+
+'						  </a>			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">			            <span class="navbar-toggler-icon"></span>			        </button>			        <div id="navbarNavDropdown" class="navbar-collapse collapse">			            <ul class="navbar-nav ml-auto navbar-list">			                <li class="nav-item">			                    <a class="nav-link" href="places_to_stay.html">Book a stay <span class="sr-only">(current)</span></a>			                </li>			                <li class="nav-item">			                    <a class="nav-link" href="partner_with_us.html">Be a Home Partner</a>			                </li>			                <li class="nav-item">			                    <a class="nav-link contact-link" href="#foo-toggle">Contact</a>			                </li>														<ul class="social-list">				                <li class="nav-item social-items"><a href=""><img src="images/home/Social-media-linkden.png" alt="linked-in logo" class="img-fluid"></a></li>								<li class="nav-item social-items"><a href=""><img src="images/home/Social-media--Facebook.png" alt="facebook icon" class="img-fluid"></a></li>								<li class="nav-item social-items"><a href=""><img src="images/home/Social-media-instagram.png" alt="instagram icon" class="img-fluid"></a></li>															</ul>'+
 '						  	<ul class="social-list whatapp-list">									<li class="social-items nav-item"><a href=""><img src="images/home/Call_Now.png" alt="call now icon" class="img-fluid call-now-icon">9999999999</a><br><a href=""><img src="images/home/Whatsapp.png" alt="whats app icon" class="img-fluid call-now-icon whats-app-icon">9999999999</a></li>							</ul>'+
 '						  										            </ul>			        </div>		        </div>		    </nav>';
 	
@@ -88,7 +88,24 @@ $(document).ready(function() {
 		$(".navigation-menu").animate({right: "-9999px"},1500);
 		setTimeout(function(){$(".navigation-menu").hide();  }, 1600);
 
-	})
+	});
+
+	var page_url = window.location.href;
+	var last = page_url.substring(page_url.lastIndexOf("/") + 1, page_url.length);
+	
+	$('body').on('click','.contact-link',function(e) {
+		e.preventDefault();
+		var hash = this.hash;
+		console.log(hash);
+		if (($( window ).width() > 991)&&(last=="index.html")){
+			$(".main").moveTo(4);
+		}
+		else {
+			$('html, body').animate({
+	        	scrollTop: $(hash).offset().top
+	      	}, 1000);
+		}
+	});
 
 })
 				

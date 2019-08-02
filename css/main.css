@@ -32,8 +32,10 @@ html, body {
 .navbar-list .nav-item {
   padding: 0 6px; }
 
-.foo-section img {
-  width: 80%; }
+.foo-section {
+  height: auto !important; }
+  .foo-section img {
+    width: 80%; }
 
 .footer-wrap {
   display: flex;
