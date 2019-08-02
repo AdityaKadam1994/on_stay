@@ -65,12 +65,13 @@ $(document).ready(function() {
 				$('.footer-wrapper').append(common_footer);
 
 	var common_header = '<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top white-nav">		    	'+
-'	<div class="container">			        '+
+'	<div class="container">			        '+  '<i class="fa fa-bars hamburger" aria-hidden="true"></i>'+
 '		<a class="navbar-brand" href="index.html">			        	'+
 '			<img src="images/home/Logo.png" alt="logo" class="img-fluid">			        	'+
 '						  </a>			        			        <div class="navbar-collapse collapse">			            <ul class="navbar-nav ml-auto navbar-list">			                <li class="nav-item">			                    <a class="nav-link" href="places_to_stay.html">Book a stay <span class="sr-only">(current)</span></a>			                </li>			                <li class="nav-item">			                    <a class="nav-link" href="partner_with_us.html">Be a Home Partner</a>			                </li>			                <li class="nav-item">			                    <a class="nav-link contact-link" href="#foo-toggle">Contact</a>			                </li>														<ul class="social-list">				                <li class="nav-item social-items"><a href=""><img src="images/home/Social-media-linkden.png" alt="linked-in logo" class="img-fluid"></a></li>								<li class="nav-item social-items"><a href=""><img src="images/home/Social-media--Facebook.png" alt="facebook icon" class="img-fluid"></a></li>								<li class="nav-item social-items"><a href=""><img src="images/home/Social-media-instagram.png" alt="instagram icon" class="img-fluid"></a></li>															</ul>'+
 '						  	<ul class="social-list whatapp-list">									<li class="social-items nav-item"><a href=""><img src="images/home/Call_Now.png" alt="call now icon" class="img-fluid call-now-icon">9999999999</a><br><a href=""><img src="images/home/Whatsapp.png" alt="whats app icon" class="img-fluid call-now-icon whats-app-icon">9999999999</a></li>							</ul>'+
-'						  										            </ul>			        </div>		        </div>		    </nav>';
+'						  										            </ul>			        </div>		        </div>		    </nav>'
+;
 	
 
 
@@ -80,13 +81,13 @@ $(document).ready(function() {
 
 	// mobile menu
 	$('.hamburger').on('click', function() {
-		$(".navigation-menu").show();
-		setTimeout(function(){ $(".navigation-menu").animate({right: "0"},1500) }, 100);
+		$(".navigation-menu").show();	
+		setTimeout(function(){ $(".navigation-menu").animate({right: "0"},1000)},10);
 	});
 	$('.inner-ham').on('click', function() {
 		
-		$(".navigation-menu").animate({right: "-9999px"},1500);
-		setTimeout(function(){$(".navigation-menu").hide();  }, 1600);
+		$(".navigation-menu").animate({right: "-9999px"},500);
+		setTimeout(function(){$(".navigation-menu").hide();  }, 501);
 
 	});
 
