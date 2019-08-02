@@ -130,10 +130,7 @@ html, body {
 		// 	background-image: url('../images/home/boxes_background.png');
 		// 	background-size: cover;
 		// }
-		// .home-slide-3 {
-		// 	background-image: url('../images/home/Image-trees.jpg');
-		// 	background-size: cover;
-		// }
+		
 		.slick-slide {
 			height: 100vh;
 		}
@@ -149,6 +146,7 @@ html, body {
 			flex-basis: 50%;
 			background: $places-to-stay-text;
 			position: relative;
+
 		}
 		.location-image {
 			
@@ -159,6 +157,12 @@ html, body {
     		flex-basis: 50%;
     		
 		}
+		.home-slide-2 {
+			.location-details {
+				background : $footer-background;
+			}
+		}
+		
 		.intro-para {
 			position: absolute;
 		    top: 50%;
@@ -174,6 +178,12 @@ html, body {
 		
 		.loc-img-1 {
 			background-image: url('../images/home/Entire_Property.JPG');	
+		}
+		.loc-img-2 {
+			background-image: url('../images/home/02.jpg');	
+		}
+		.loc-img-3 {
+			background-image: url('../images/home/2_BHK_LIving.jpeg');	
 		}
 		
 	}

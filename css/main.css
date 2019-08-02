@@ -131,6 +131,8 @@ html, body {
     background-repeat: no-repeat;
     height: 100%;
     flex-basis: 50%; }
+  .home-slider .home-slide-2 .location-details {
+    background: #3399ff; }
   .home-slider .intro-para {
     position: absolute;
     top: 50%;
@@ -143,6 +145,10 @@ html, body {
     font-weight: 100; }
   .home-slider .loc-img-1 {
     background-image: url("../images/home/Entire_Property.JPG"); }
+  .home-slider .loc-img-2 {
+    background-image: url("../images/home/02.jpg"); }
+  .home-slider .loc-img-3 {
+    background-image: url("../images/home/2_BHK_LIving.jpeg"); }
 
 .section1 .landing-cotainer {
   position: relative;
