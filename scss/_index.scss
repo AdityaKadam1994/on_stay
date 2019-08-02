@@ -636,6 +636,9 @@ html, body {
 }
 
 @media only screen and (max-width: 768px) {
+	.section1 .home-slider .home-slide-1 {
+		background-image: url("../images/home/mob_homepage.jpg")
+	}
 	.foo-section {
 		height: auto !important;
 	}
